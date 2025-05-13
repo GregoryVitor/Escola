@@ -84,7 +84,7 @@ public class JFCliente extends javax.swing.JFrame {
         jBSair = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("Dados dos Clientes");
+        setTitle("Dados dos Alunos");
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosed(java.awt.event.WindowEvent evt) {
                 formWindowClosed(evt);
@@ -106,6 +106,12 @@ public class JFCliente extends javax.swing.JFrame {
         jLabel6.setText("Telefone:");
 
         jLabel7.setText("ID: ");
+
+        jT2DataDia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jT2DataDiaActionPerformed(evt);
+            }
+        });
 
         jLabel9.setText("/");
 
@@ -195,7 +201,7 @@ public class JFCliente extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Pesquisar Cliente"));
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Cadastro aluno"));
         jPanel2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jTPesquisar.addActionListener(new java.awt.event.ActionListener() {
@@ -258,14 +264,14 @@ public class JFCliente extends javax.swing.JFrame {
             }
         });
 
-        jBAlterar.setText("Alterar");
+        jBAlterar.setText("Editar");
         jBAlterar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBAlterarActionPerformed(evt);
             }
         });
 
-        jBNovo.setText("Novo");
+        jBNovo.setText("Novo Aluno");
         jBNovo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBNovoActionPerformed(evt);
@@ -304,16 +310,16 @@ public class JFCliente extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jBExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jBAlterar)
-                .addGap(18, 18, 18)
                 .addComponent(jBNovo)
                 .addGap(18, 18, 18)
                 .addComponent(jBCadastrar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(jBAlterar)
+                .addGap(18, 18, 18)
+                .addComponent(jBExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jBSair)
-                .addContainerGap())
+                .addContainerGap(22, Short.MAX_VALUE))
         );
 
         jPanel3Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jBAlterar, jBCadastrar, jBExcluir, jBNovo, jBSair});
@@ -420,6 +426,10 @@ public class JFCliente extends javax.swing.JFrame {
     private void jTPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTPesquisarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTPesquisarActionPerformed
+
+    private void jT2DataDiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jT2DataDiaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jT2DataDiaActionPerformed
     
     
     

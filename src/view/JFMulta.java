@@ -83,13 +83,13 @@ public class JFMulta extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Dados Multas"));
 
-        jLabel2.setText("ID do cliente: ");
+        jLabel2.setText("ID do aluno: ");
 
         jLabel3.setText("Descricao");
 
         jLabel4.setText("Valor: R$");
 
-        jLabel5.setText("Dívida Total do Cliente: R$");
+        jLabel5.setText("Dívida Total do Aluno: R$");
 
         jCBDescricao.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Atraso na devolução", "Livro danificado", "Perda do livro" }));
 
@@ -155,7 +155,7 @@ public class JFMulta extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(jTableMulta);
 
-        jLabel6.setText("Nome do cliente: ");
+        jLabel6.setText("Nome do Alunos: ");
 
         jTableCliente.setModel(tmCliente);
         jTableCliente.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -167,7 +167,7 @@ public class JFMulta extends javax.swing.JFrame {
 
         jLabel8.setText("Selecione a multa abaixo: ");
 
-        jLabel9.setText("Selecione o cliente abaixo: ");
+        jLabel9.setText("Selecione o aluno abaixo: ");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -222,7 +222,7 @@ public class JFMulta extends javax.swing.JFrame {
             }
         });
 
-        jBNovo.setText("Novo");
+        jBNovo.setText("Nova Multa");
         jBNovo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBNovoActionPerformed(evt);
@@ -293,7 +293,7 @@ public class JFMulta extends javax.swing.JFrame {
 
         jLabel7.setText("ATENÇÃO! Para efetuar o pagamento, é necessário ");
 
-        jLabel10.setText("selecionar o campo correspondente ao nome do cliente.");
+        jLabel10.setText("selecionar o campo correspondente ao nome do aluno.");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);

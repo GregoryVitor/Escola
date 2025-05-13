@@ -153,7 +153,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="ID do cliente: "/>
+            <Property name="text" type="java.lang.String" value="ID do aluno: "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
@@ -304,8 +304,11 @@
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="bGPesquisa"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Clientes"/>
+            <Property name="text" type="java.lang.String" value="Aluno"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRClientesActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRLivros">
           <Properties>
@@ -366,7 +369,7 @@
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel8">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Selecione o cliente abaixo: "/>
+            <Property name="text" type="java.lang.String" value="Selecione o aluno abaixo: "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel9">
@@ -443,7 +446,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="jBNovo">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Novo"/>
+            <Property name="text" type="java.lang.String" value="Novo Emprestimo"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBNovoActionPerformed"/>
@@ -471,6 +474,7 @@
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jBDevolverMouseClicked"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBDevolverActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
@@ -514,7 +518,7 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="jLabel7">
           <Properties>
-            <Property name="text" type="java.lang.String" value="ATEN&#xc7;&#xc3;O! Preencha os campos &quot;cliente&quot; e &quot;livro&quot; clicando"/>
+            <Property name="text" type="java.lang.String" value="ATEN&#xc7;&#xc3;O! Preencha os campos &quot;aluno&quot; e &quot;livro&quot; clicando"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel10">

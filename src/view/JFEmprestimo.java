@@ -117,7 +117,7 @@ public class JFEmprestimo extends javax.swing.JFrame {
 
         jLabel1.setText("ID: ");
 
-        jLabel2.setText("ID do cliente: ");
+        jLabel2.setText("ID do aluno: ");
 
         jLabel3.setText("ID do livro: ");
 
@@ -194,7 +194,12 @@ public class JFEmprestimo extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTableEmprestimo);
 
         bGPesquisa.add(jRClientes);
-        jRClientes.setText("Clientes");
+        jRClientes.setText("Aluno");
+        jRClientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRClientesActionPerformed(evt);
+            }
+        });
 
         bGPesquisa.add(jRLivros);
         jRLivros.setText("Livros");
@@ -217,7 +222,7 @@ public class JFEmprestimo extends javax.swing.JFrame {
         });
         jScrollPane3.setViewportView(jTableCliente);
 
-        jLabel8.setText("Selecione o cliente abaixo: ");
+        jLabel8.setText("Selecione o aluno abaixo: ");
 
         jLabel9.setText("Selecione o livro abaixo: ");
 
@@ -293,7 +298,7 @@ public class JFEmprestimo extends javax.swing.JFrame {
             }
         });
 
-        jBNovo.setText("Novo");
+        jBNovo.setText("Novo Emprestimo");
         jBNovo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBNovoActionPerformed(evt);
@@ -318,6 +323,11 @@ public class JFEmprestimo extends javax.swing.JFrame {
         jBDevolver.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jBDevolverMouseClicked(evt);
+            }
+        });
+        jBDevolver.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBDevolverActionPerformed(evt);
             }
         });
 
@@ -362,7 +372,7 @@ public class JFEmprestimo extends javax.swing.JFrame {
 
         jPanel4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jLabel7.setText("ATENÇÃO! Preencha os campos \"cliente\" e \"livro\" clicando");
+        jLabel7.setText("ATENÇÃO! Preencha os campos \"aluno\" e \"livro\" clicando");
 
         jLabel10.setText("no registro,encontrado na área de pesquisa.");
 
@@ -528,6 +538,14 @@ public class JFEmprestimo extends javax.swing.JFrame {
     private void jBSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBSairActionPerformed
         this.dispose();
     }//GEN-LAST:event_jBSairActionPerformed
+
+    private void jRClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRClientesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRClientesActionPerformed
+
+    private void jBDevolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBDevolverActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBDevolverActionPerformed
     
     
     
@@ -556,7 +574,7 @@ public class JFEmprestimo extends javax.swing.JFrame {
 
                             d.adicionaEmprestimo(e);
 
-                            alteraDisponibilidade("0");
+                            //alteraDisponibilidade("0");
 
                             JOptionPane.showMessageDialog(rootPane, "Empréstimo efetuado com sucesso.");
                             limpaCamposEmprestimo();

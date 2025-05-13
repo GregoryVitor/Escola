@@ -140,7 +140,7 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="ID do cliente: "/>
+            <Property name="text" type="java.lang.String" value="ID do aluno: "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
@@ -157,7 +157,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
-            <Property name="text" type="java.lang.String" value="D&#xed;vida Total do Cliente: R$"/>
+            <Property name="text" type="java.lang.String" value="D&#xed;vida Total do Aluno: R$"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jT4ValorTotal">
@@ -274,7 +274,7 @@
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Nome do cliente: "/>
+            <Property name="text" type="java.lang.String" value="Nome do Alunos: "/>
           </Properties>
         </Component>
         <Container class="javax.swing.JScrollPane" name="jScrollPane3">
@@ -303,7 +303,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel9">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Selecione o cliente abaixo: "/>
+            <Property name="text" type="java.lang.String" value="Selecione o aluno abaixo: "/>
           </Properties>
         </Component>
       </SubComponents>
@@ -370,7 +370,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="jBNovo">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Novo"/>
+            <Property name="text" type="java.lang.String" value="Nova Multa"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBNovoActionPerformed"/>
@@ -447,7 +447,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel10">
           <Properties>
-            <Property name="text" type="java.lang.String" value="selecionar o campo correspondente ao nome do cliente."/>
+            <Property name="text" type="java.lang.String" value="selecionar o campo correspondente ao nome do aluno."/>
           </Properties>
         </Component>
       </SubComponents>
